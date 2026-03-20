@@ -18,6 +18,7 @@ Repositório com links úteis para aprendizado de desenvolvimento web, boas prá
 - [📈 Análise de Dados](#-análise-de-dados)
 - [🗃️ Bancos de Dados](#️-bancos-de-dados)
 - [☁️ Backend as a Service (BaaS)](#️-backend-as-a-service-baas)
+- [🏗️ IaaS (Infrastructure as a Service)](#️-iaas-infrastructure-as-a-service)
 - [📦 DevOps](#-devops)
 - [📐 Boas Práticas](#-boas-práticas)
 - [🧪 Testes](#-testes)
@@ -187,6 +188,14 @@ Repositório com links úteis para aprendizado de desenvolvimento web, boas prá
 - https://firebase.google.com/docs
 - https://pocketbase.io/docs/
 - https://supabase.com/docs
+
+---
+
+## 🏗️ IaaS (Infrastructure as a Service)
+
+- https://aws.amazon.com/ — AWS (**Free Tier robusto**)
+- https://cloud.google.com/ — Google Cloud Platform (**Integração nativa com Firebase**)
+- https://www.digitalocean.com/ — DigitalOcean (**Simplicidade e Droplets de baixo custo**)
 
 ---
 
