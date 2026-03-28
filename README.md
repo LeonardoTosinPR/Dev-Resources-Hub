@@ -269,6 +269,7 @@ Repositório com links úteis para aprendizado de desenvolvimento web, boas prá
 - Laravel Passport
 - Eloquent ORM
 - PHPUnit
+- [Spatie Media](https://spatie.be/docs/laravel-medialibrary)
 
 **Quando usar**
 - CRUD rápido
