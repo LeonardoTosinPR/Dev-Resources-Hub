@@ -195,60 +195,191 @@ Repositório com links úteis para aprendizado de desenvolvimento web, boas prá
 ## 🤖 IA para UI/UX & Código
 
 ### 🎨 UI com IA
+
 - https://stitch.withgoogle.com/ (**Gratuito**)
 - https://www.figma.com/ai/ (**Freemium**)
 - https://uizard.io/ (**Freemium**)
 - https://www.locofy.ai/ (**Freemium**)
 
-### 💻 Código com IA
-- https://chat.openai.com/ (**Freemium**)
-- https://github.com/features/copilot (**Pago**)
-- https://www.cursor.so/ (**Freemium**)
-- https://codeium.com/ (**Gratuito**)
+### 💻 Assistentes e agentes de código
 
----
+- https://chatgpt.com/ (**Freemium**) — Assistência geral, análise, geração e revisão de código
+- https://claude.ai/ (**Freemium**) — LLM com forte desempenho em análise, raciocínio e programação
+- https://www.anthropic.com/product/claude-code (**Pago**) — Agente de programação para terminal e IDE
+- https://github.com/features/copilot (**Pago**) — Assistente integrado ao editor e GitHub
+- https://www.cursor.com/ (**Pago/Freemium**) — Editor baseado em VS Code com IA integrada
+- https://windsurf.com/ (**Freemium**) — IDE com agentes e assistência contextual
 
-### ⚖️ IA para código (mesma função)
+### 🖥️ LLMs locais
 
-| Critério | ChatGPT | Copilot | Cursor | Codeium |
-|---------|--------|--------|--------|--------|
-| Facilidade | 5 | 5 | 4 | 5 |
-| Produtividade | 5 | 5 | 5 | 4 |
-| Custo-benefício | 4 | 3 | 4 | 5 |
+LLMs locais são modelos executados diretamente no computador do usuário. Eles podem oferecer maior privacidade e eliminar custos por requisição, mas o desempenho depende fortemente de RAM, VRAM, CPU/GPU, quantização e tamanho do modelo.
 
----
+#### ⚙️ Ferramentas para executar LLMs localmente
 
-## 🧠 Uso correto e ético de IA
+- https://ollama.com/ (**Gratuito**) — Execução de modelos por CLI e API local
+- https://lmstudio.ai/ (**Gratuito**) — Interface gráfica para baixar e executar LLMs localmente
+- https://github.com/ggerganov/llama.cpp (**Gratuito / Open Source**) — Runtime de alto desempenho para modelos compatíveis
 
-### ✅ Boas práticas
+#### 🧠 Modelos recomendados
 
-- Utilize IA como **assistente**, não como substituto do aprendizado  
-- Sempre **revise e entenda o código gerado**  
-- Valide com documentação e testes  
+**Qwen 3**
+- https://ollama.com/library/qwen3
+- Boa opção geral para programação, raciocínio e tarefas com ferramentas
+- Disponível em diversos tamanhos
+- Possui variantes densas e Mixture-of-Experts
+
+**Gemma 4**
+- https://ollama.com/library/gemma4
+- Desenvolvido pelo Google DeepMind
+- Bom equilíbrio entre raciocínio, programação e multimodalidade
+- Possui modelos voltados tanto para dispositivos menores quanto para workstations
+
+**DeepSeek**
+- https://ollama.com/search?q=deepseek
+- Alternativa relevante para raciocínio e programação
+- Disponível em diferentes tamanhos e versões
+- Modelos maiores exigem hardware significativamente mais potente
+
+### ⚖️ Comparação de assistentes/agentes de código
+
+> **Importante:** as notas abaixo avaliam a experiência da ferramenta para desenvolvimento, e não a "inteligência" absoluta do modelo. Modelos, planos e recursos mudam com frequência.
+
+| Critério | ChatGPT | Claude Code | Copilot | Cursor | Windsurf |
+|---------|---------|-------------|---------|--------|----------|
+| Assistência geral | 5 | 4 | 3 | 4 | 4 |
+| Geração de código | 5 | 5 | 5 | 5 | 5 |
+| Compreensão de projeto | 4 | 5 | 4 | 5 | 5 |
+| Agente/autonomia | 4 | 5 | 4 | 5 | 5 |
+| Integração com IDE | 4 | 4 | 5 | 5 | 5 |
+| Terminal / CLI | 4 | 5 | 3 | 5 | 4 |
+| Debugging | 5 | 5 | 4 | 5 | 5 |
+| Refatoração | 5 | 5 | 4 | 5 | 5 |
+| Facilidade inicial | 5 | 4 | 5 | 4 | 4 |
+| Custo-benefício | 4 | 4 | 4 | 4 | 4 |
+
+### ⚖️ Nuvem vs LLM local
+
+| Critério | LLM em nuvem | LLM local |
+|---------|---------------|-----------|
+| Qualidade máxima | 5 | 3–5 |
+| Privacidade | 3 | 5 |
+| Custo recorrente | 3 | 5 |
+| Facilidade de uso | 5 | 3 |
+| Requisitos de hardware | 5 | 2 |
+| Disponibilidade offline | 1 | 5 |
+| Velocidade | 5 | 2–5 |
+| Personalização | 4 | 5 |
+| Escalabilidade | 5 | 2–3 |
+| Controle dos dados | 3 | 5 |
+
+### 🧩 Qual escolher?
+
+**ChatGPT**
+- Explicações, aprendizado e debugging
+- Planejamento de arquitetura
+- Análise de problemas complexos
+- Uso geral além de programação
+
+**Claude / Claude Code**
+- Refatorações grandes
+- Entendimento de bases de código
+- Desenvolvimento orientado a tarefas
+- Automação pelo terminal
+- Agentes que precisam trabalhar em vários arquivos
+
+**GitHub Copilot**
+- Autocomplete e assistência diretamente no IDE
+- Fluxos de desenvolvimento integrados ao GitHub
+- Boa escolha para quem quer pouca mudança no fluxo tradicional
+
+**Cursor**
+- Desenvolvimento dentro de um editor com IA como parte central do fluxo
+- Edição de múltiplos arquivos
+- Contexto de projeto
+- Agentes de desenvolvimento
+
+**Windsurf**
+- IDE orientada a agentes
+- Automação de tarefas
+- Contexto de projeto e edição assistida
+
+**Ollama**
+- Execução local por terminal
+- APIs locais
+- Experimentação com diferentes modelos
+- Integração com ferramentas de desenvolvimento
+
+**LM Studio**
+- Melhor opção para quem prefere interface gráfica
+- Download e gerenciamento simplificado de modelos
+- Testes e comparação entre diferentes LLMs
+- API local para integração com aplicações
+
+### 💡 LLM local: qual modelo escolher?
+
+| Modelo | Melhor uso | Hardware | Nível |
+|---------|------------|----------|-------|
+| Qwen 3 4B | Código simples, estudos e máquinas modestas | Baixo | 🟢 Básico |
+| Qwen 3 8B | Programação geral | Médio | 🟢 Recomendado |
+| Gemma 4 12B | Código + raciocínio + multimodalidade | Médio/alto | 🟡 Avançado |
+| Qwen 3 14B | Programação e raciocínio mais complexos | Alto | 🟡 Avançado |
+| Qwen 3 30B | Projetos complexos e agentes | Alto | 🔴 Entusiasta |
+| Gemma 4 26B | Raciocínio, código e multimodalidade | Alto | 🔴 Entusiasta |
+| Gemma 4 31B | Máxima capacidade local entre essas opções | Muito alto | 🔴 Entusiasta |
+
+> **Regra prática:** não escolha um LLM local apenas pelo número de parâmetros. Quantização, arquitetura, contexto e hardware disponível têm impacto direto na experiência. Um modelo menor bem quantizado pode ser muito mais rápido e útil no dia a dia do que um modelo grande executado no limite do hardware.
+
+### 🏆 Recomendações por cenário
+
+| Cenário | Recomendação |
+|---------|--------------|
+| Aprender programação | ChatGPT / Claude |
+| Debugging complexo | Claude Code / ChatGPT |
+| Refatoração de projeto grande | Claude Code / Cursor |
+| Autocomplete no IDE | GitHub Copilot |
+| Agente de programação | Claude Code / Cursor / Windsurf |
+| Programação offline | Ollama + Qwen 3 |
+| Privacidade de código | LLM local |
+| PC com hardware limitado | Qwen 3 4B/8B ou Gemma 4 E4B |
+| PC intermediário | Qwen 3 8B/14B ou Gemma 4 12B |
+| Workstation potente | Qwen 3 30B / Gemma 4 26B/31B |
+| Experimentar vários modelos | LM Studio |
+| Usar LLM local via terminal/API | Ollama |
+
+### 🧠 Uso correto e ético de IA
+
+#### ✅ Boas práticas
+
+- Utilize IA como **assistente**, não como substituto do aprendizado
+- Sempre **revise e entenda o código gerado**
+- Valide com documentação e testes
 - Use para:
   - Explicação de conceitos
   - Debug
   - Boilerplate
-  - Refatoração  
-- Cite o uso em trabalhos acadêmicos quando necessário  
+  - Refatoração
+  - Documentação
+  - Geração de testes
+- Cite o uso em trabalhos acadêmicos quando necessário
+- Em LLMs locais, verifique a **licença do modelo** antes de utilizá-lo comercialmente
 
----
+#### ⚠️ Cuidados
 
-### ⚠️ Cuidados
-
-- Não copie código sem entender  
-- Não envie dados sensíveis  
-- IA pode gerar código inseguro ou incorreto  
-
----
+- Não copie código sem entender
+- Não envie dados sensíveis para serviços de IA em nuvem
+- IA pode gerar código inseguro, incorreto ou desatualizado
+- Modelos locais também podem produzir respostas incorretas
+- Verifique dependências, licenças e vulnerabilidades do código gerado
+- Não confunda execução local com garantia de segurança: o modelo continua podendo gerar conteúdo incorreto ou inseguro
 
 ## 📈 Vantagens do uso de IA
 
 - Produtividade alta (5)
 - Aprendizado acelerado (5)
 - Automação de tarefas (5)
-
----
+- Geração de testes (5)
+- Auxílio em documentação (5)
+- Exploração de alternativas de implementação (5)
 
 ## ⚠️ Consequências do uso incorreto
 
@@ -256,7 +387,16 @@ Repositório com links úteis para aprendizado de desenvolvimento web, boas prá
 - Falta de base técnica (4)
 - Código ruim/inseguro (4)
 - Problemas acadêmicos (5)
+- Vazamento de informações (5)
+- Dependência excessiva de ferramentas proprietárias (3)
 
+### 📌 Observação sobre as comparações
+
+As comparações deste README não representam um ranking absoluto de "qual IA é melhor". O desempenho varia conforme o modelo utilizado, contexto fornecido, linguagem, tamanho do projeto, ferramenta, plano e tarefa.
+
+Em particular, **LLM local e IA em nuvem não são substitutos perfeitos**. A nuvem normalmente oferece modelos maiores e infraestrutura especializada; o modelo local oferece controle, privacidade, operação offline e ausência de custo por requisição.
+
+O ideal é escolher a ferramenta de acordo com o problema, e não assumir que uma única IA será superior em todos os cenários.
 ---
 
 ## 🗄️ Back-end
@@ -386,6 +526,7 @@ Repositório com links úteis para aprendizado de desenvolvimento web, boas prá
 - https://12factor.net/ (**Gratuito**)
 - https://refactoring.guru/pt-br (**Gratuito**)
 - https://martinfowler.com/ (**Gratuito**)
+- https://medium.com/desenvolvendo-com-paixao/o-que-é-solid-o-guia-completo-para-você-entender-os-5-princípios-da-poo-2b937b3fc530 (**Gratuito**)
 
 ---
 
